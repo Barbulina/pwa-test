@@ -4,8 +4,8 @@ export const manifest: Partial<VitePWAOptions> = {
   registerType: "prompt",
   includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
   manifest: {
-    short_name: "PWA Cobee",
-    name: "PWA Cobee: I want be a APP!",
+    short_name: "PWA POC",
+    name: "PWA POC: I want be a APP!",
     icons: [
       {
         src: "app-icons/manifest-icon-192.maskable.png",
