@@ -8,25 +8,25 @@ export const manifest: Partial<VitePWAOptions> = {
     name: "PWA Cobee: I want be a APP!",
     icons: [
       {
-        src: "assets/app-icons/manifest-icon-192.maskable.png",
+        src: "app-icons/manifest-icon-192.maskable.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "assets/app-icons/manifest-icon-192.maskable.png",
+        src: "app-icons/manifest-icon-192.maskable.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "maskable",
       },
       {
-        src: "assets/app-icons/manifest-icon-512.maskable.png",
+        src: "app-icons/manifest-icon-512.maskable.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "assets/app-icons/manifest-icon-512.maskable.png",
+        src: "app-icons/manifest-icon-512.maskable.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",
