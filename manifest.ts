@@ -32,7 +32,7 @@ export const manifest: Partial<VitePWAOptions> = {
         purpose: "maskable",
       },
     ],
-    theme_color: "#33676",
+    theme_color: "#3367D6",
     background_color: "#3367D6",
     display: "fullscreen",
     start_url: "/",
