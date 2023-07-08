@@ -1,11 +1,10 @@
-const button = ({
-  children,
-  handleClick,
-}: {
-  children: React.ReactNode;
-  handleClick: React.MouseEventHandler<HTMLButtonElement>;
-}) => {
-  return <button onClick={handleClick}>{children}</button>;
+import Button, { ButtonProps } from "@mui/material/Button";
+
+type ButtonType = ButtonProps & {
+  handleClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
+const PButton = ({ children, ...props }: ButtonType) => {
+  return <Button {...props}>{children}</Button>;
 };
 
-export default button;
+export default PButton;
