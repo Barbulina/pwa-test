@@ -1,12 +1,30 @@
-import { TextField } from "@mui/material";
-import Autocomplete from "@mui/material/Autocomplete";
+import { TextField } from '@mui/material';
+import Autocomplete from '@mui/material/Autocomplete';
 
-const PAutocomplete = ({ options, label, props, onChange }: any) => {
+interface optionInterface {
+  value: string;
+  id: string;
+  label: string;
+}
+
+const PAutocomplete = ({
+  options,
+  label,
+  props,
+  onChange,
+}: {
+  options: optionInterface[];
+  label?: string;
+  props?: { [x: string]: unknown }[];
+  onChange: (value: unknown) => void;
+}) => {
   return (
     <Autocomplete
       options={options}
       renderInput={(params) => <TextField {...params} label={label} />}
-      onChange={onChange}
+      onChange={(_: React.SyntheticEvent, v: optionInterface | null) =>
+        onChange(v)
+      }
       {...props}
     />
   );
