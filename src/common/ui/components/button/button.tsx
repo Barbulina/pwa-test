@@ -1,4 +1,4 @@
-import Button, { ButtonProps } from "@mui/material/Button";
+import Button, { ButtonProps } from '@mui/material/Button';
 
 type ButtonType = ButtonProps & {
   handleClick?: React.MouseEventHandler<HTMLButtonElement>;

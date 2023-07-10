@@ -1,14 +1,20 @@
-import { render, screen } from "@testing-library/react";
-import PAutocomplete from "./Autocomplete";
+import { render, screen } from '@testing-library/react';
+import PAutocomplete from './Autocomplete';
 
-const optionsMocked = ["option1", "option2"];
+const optionsMocked = [
+  { id: 'option1', value: 'option1', label: 'option1' },
+  { id: 'option2', value: 'option2', label: 'option2' },
+];
 
-describe("Autocomplete Component", () => {
-  it("should render Autocomplete Component with label", () => {
+describe('Autocomplete Component', () => {
+  it('should render Autocomplete Component with label', () => {
     const autocompleteComponent = render(
       <PAutocomplete
         label="AutocompleteComponentLabel"
         options={optionsMocked}
+        onChange={() => {
+          return true;
+        }}
       />
     );
 
