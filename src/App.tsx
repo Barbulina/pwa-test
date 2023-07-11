@@ -1,7 +1,10 @@
 import './App.css';
 import PAutocomplete from './common/ui/components/Autocomplete/Autocomplete';
+import rationService from './ration/domain/services/rationServices';
 
 function App() {
+  const data = rationService.findRations();
+  console.log({ data });
   const handleOnChange = (opt: unknown) => {
     console.log(opt);
   };
@@ -9,14 +12,7 @@ function App() {
   return (
     <>
       <h1>I want to be a APP</h1>
-      <PAutocomplete
-        options={[
-          { label: 'test1', value: '1', id: 'myID1' },
-          { label: 'test2', value: '2', id: 'myID2' },
-        ]}
-        label="MyLabel"
-        onChange={handleOnChange}
-      />
+      <PAutocomplete options={data} label="MyLabel" onChange={handleOnChange} />
     </>
   );
 }
