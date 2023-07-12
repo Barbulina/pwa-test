@@ -2,8 +2,6 @@ import { TextField } from '@mui/material';
 import Autocomplete from '@mui/material/Autocomplete';
 
 interface optionInterface {
-  value: string;
-  id: string;
   label: string;
 }
 
